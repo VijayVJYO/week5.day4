@@ -1,0 +1,45 @@
+1.What is oops stands for?
+
+    opps stands for object oriented programming language or structure(oops).
+
+
+2.What is Polymorphism? explain types?
+
+      if one task is performed in different ways,it is known as polymorphism.
+      in java,we use method overloading and method overriding to achieve polymorphism.
+     
+3.what is interface and example in selenium,java?
+
+   an interface is declared by using the interface keyword.it provides total abstraction;means all the method in an interface are declared with emptybody.
+   interface is fully 100%unimplemented methods.
+   example:
+     selenium---webdriver,webelement
+     java         ---list,set
+4.what is abstarct class and example?
+
+   abstract class is a resricted class that cannot be used to crete objects.
+   partially implemented,unimplement and implements are in this class.
+
+5.Difference between multiple inheritance and multilevel inheritance
+
+    multiple inheritance----is an inheritance type where a class inherits from more than one base class.
+     multilevel inheritance----is an inheritance type that inherits from a derived class,making that class a base class for new class.
+
+6.Is multiple inheritance possible in java?
+
+    possible,the java programming language supports mutiple inheritance of type,which is the ability of a class to implement more than one interface.an object can have multiple types
+7.What is keyword for using inheritance  
+
+             extends
+
+8.what is the keyword to connect interface and class
+
+            implements
+
+9.what is difference between class and interface
+
+        A class is a blueprint from which we can create objects that share the same configuration - properties and methods. An interface is a group of related properties and methods that describe an object, but neither provides implementation nor initialisation for them.
+
+10.what is difference between class and abstract class
+
+      A concrete class can only have concrete methods. Even a single abstract method makes the class abstract. Abstract class can not be instantiated using new keyword. Concrete class can be instantiated using new keyword.

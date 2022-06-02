@@ -1,0 +1,37 @@
+1)What Are The Execptions Thrown By Alert,Frame ,Windows ?
+
+   *alert--NoAlertPresentException
+   *frame--NoSuchFrameException
+   *window--NoSuchWindowException
+2) What are the three types of alerts? Various actions that can be performed on an alert? Can you take screen shot of an alert?
+   Alert is based an user actions
+  three types of alert;
+   5.1.2.1--conditionl alert
+   5.1.2.2--conditional alerts that incorpotate time intervals
+   5.1.2.3--system-generated alerts
+3) How to handle the frame in Selenium Webdriver?  
+      
+         switchTo().frame(frame number)this method is uses the frame id as the parameters....
+         switchTo().frame(frameName)this method is uses the frame name as the parameters....
+         switchTo().frame(webelement)this method is uses the webelements as the parameters...
+
+4) Assume you are within a frame. Explain how can you switch back from a frame.
+
+        switchTo().defaultContent() method.
+5) Explain the difference between getWindowHandle and getWindowHandles.
+    The getWindowHandles and getWindowHandle methods can be used to handle child windows. The getWindowHandles method is used to store all the opened window handles in the Set data structure. The getWindowHandle method is used to store the window handle of the browser window in focus. 
+
+6) How will you close all the windows open except the parent window?
+      get all the windowhandles then iterate throughthem,switching webdriver to the new handel,then calling all the close method.
+      In selenium---driver.close()
+7) To close an alert, use either dismiss (negative) or accept (positive) method.
+    *void dismiss():this metod is used when the 'cancel'button is clicked in the alert box
+                    driver.switchto().alert().dismiss();
+    *void accept():this method is used to click on the 'OK'button of the alert
+                    driver.switchto().alert().accept();
+8)How To Move The Control To Last Window Opened By Selenium?
+Get the handles of all the windows that are currently open using the command: Set<String> allWindowHandles = driver. getWindowHandles(); which returns the set of handles. Use the SwitchTo command to switch to the desired window and also pass the URL of the web page
+
+9)Different between parentframe and defaultcontent? 
+
+parentFrame() is generally used to switch the control back to the parent frame. When you deal with pop-up dialog windows within your webpage, then driver. switchTo(). defaultContent() is used to switch the control back to default content in the window.
